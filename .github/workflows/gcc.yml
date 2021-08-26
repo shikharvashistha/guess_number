@@ -1,4 +1,4 @@
-name: cl
+name: gcc
 'on':
   push:
     branches:
@@ -13,7 +13,7 @@ jobs:
       fail-fast: true
       matrix:
         os:
-          - ubuntu-latest
+          - windows-latest
     steps:
       - uses: actions/checkout@v2
       - name: configure
